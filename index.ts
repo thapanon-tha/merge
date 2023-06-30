@@ -1,6 +1,6 @@
 import * as readline from "readline"
-import { merge } from "./merge"
-import { bubbleSort } from "./bubble"
+import { merge } from "./services/merge"
+import { bubbleSort } from "./services/bubble"
 
 function getInput(prompt: string): Promise<string> {
   const rl = readline.createInterface({
