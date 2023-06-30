@@ -11,4 +11,4 @@ This project is TypeScript project to Merge number between collection.
 1. Clone the repository:
 
    ```shell
-   git clone [https://github.com/thapanon-tha/merge.git](https://github.com/thapanon-tha/merge.git)https://github.com/thapanon-tha/merge.git
+   git clone https://github.com/thapanon-tha/merge.git
