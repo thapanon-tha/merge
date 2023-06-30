@@ -1,5 +1,6 @@
 import * as readline from "readline"
 import { merge } from "./merge"
+import { bubbleSort } from "./bubble"
 
 function getInput(prompt: string): Promise<string> {
   const rl = readline.createInterface({
@@ -20,10 +21,7 @@ const changeFormat = (str: string) => {
   const strTrim = str.replace(" ", "")
   if (strTrim === "") return []
 
-  return strTrim
-    .split(",")
-    .map((e) => parseInt(e))
-    .sort((a, b) => a - b)
+  return bubbleSort(strTrim.split(",").map((e) => parseInt(e)))
 }
 
 async function main() {
